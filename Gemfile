@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'sidekiq', '~> 5.2'
+gem 'sidekiq-scheduler'
 gem 'httparty'
 gem 'devise'
 gem 'nokogiri'

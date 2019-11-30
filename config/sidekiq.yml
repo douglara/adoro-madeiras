@@ -1,0 +1,7 @@
+:concurrency: 8
+:queues:
+  - default
+:schedule:
+  olx_sync:
+    cron: '* /3 * * * *'   # Runs every 3 minutes
+    class: CheckPucPrNotesWorker
