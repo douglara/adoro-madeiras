@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>GestaoVidaAcademica</title>
+    <link class="component" href="/vda/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/basic_classes.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" rel="stylesheet" type="text/css" /><link class="component" href="/vda/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/extended_classes.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" media="rich-extended-skinning" rel="stylesheet" type="text/css" /><script src="/vda/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript" type="text/javascript"></script><script src="/vda/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.PrototypeScript" type="text/javascript"></script><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/utils.js" type="text/javascript"></script><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/browser_info.js" type="text/javascript"></script><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/modalPanel.js" type="text/javascript"></script><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/modalPanelBorders.js" type="text/javascript"></script><link class="component" href="/vda/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/modalPanel.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" rel="stylesheet" type="text/css" /><link class="component" href="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/css/msg.css" rel="stylesheet" type="text/css" /><link class="component" href="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/css/msgs.css" rel="stylesheet" type="text/css" /><link class="component" href="/vda/a4j/s/3_3_3.Finalcss/panel.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" rel="stylesheet" type="text/css" /><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/jquery/jquery.js" type="text/javascript"></script><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/tooltip.js" type="text/javascript"></script><link class="component" href="/vda/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/tooltip.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" rel="stylesheet" type="text/css" /><link class="component" href="/vda/a4j/s/3_3_3.Finalcss/table.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" rel="stylesheet" type="text/css" /><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/datascroller.js" type="text/javascript"></script><link class="component" href="/vda/a4j/s/3_3_3.Finalcss/datascroller.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" rel="stylesheet" type="text/css" /><script type="text/javascript">window.RICH_FACES_EXTENDED_SKINNING_ON=true;</script><script src="/vda/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/skinning.js" type="text/javascript"></script><link class="user" href="/vda/a4j/s/3_3_3.Finalstylesheet/theme.xcss/DATB/eAGbUnaFO3T5DGkAEaUDmQ__" rel="stylesheet" type="text/css" /><link class="user" href="/vda/stylesheet/theme.css" rel="stylesheet" type="text/css" /><link class="user" href="/vda/stylesheet/messages.css" rel="stylesheet" type="text/css" /><script src="/vda/js/autoCurrency.js" type="text/javascript"></script><script src="/vda/js/jquery.maskedinput-1.2.2.js" type="text/javascript"></script><link rel="shortcut icon" href="/vda/favicon.ico" />
+</head>
+
+<body>
+
+	<div class="body">
+<style>
+body {
+	background: #F3F2F2;
+}
+</style>
+<script type="text/javascript">
+	window.onload = function(){
+		if(false)
+			Richfaces.showModalPanel('panelBanner');
+    }
+</script>
+<form id="consultaNotasAlunoForm" name="consultaNotasAlunoForm" method="post" action="/vda/pages/consultanotas/consultanotas.seam" enctype="application/x-www-form-urlencoded" style="margin-top:-27px;margin-left:-27px;">
+<input type="hidden" name="consultaNotasAlunoForm" value="consultaNotasAlunoForm" />
+<div id="consultaNotasAlunoForm:waitConsultaNotas:waitSplash" style="display: none;"><input autocomplete="off" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashOpenedState" name="consultaNotasAlunoForm:waitConsultaNotas:waitSplashOpenedState" type="hidden" /><div class="rich-modalpanel " id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="rich-mpnl-mask-div-opaque rich-mpnl-mask-div" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashDiv" style="z-index: -1;"><button class="rich-mpnl-button" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashFirstHref"></button></div><div class="rich-mpnl-panel"><div class="rich-mp-container" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="rich-mpnl-shadow" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashShadowDiv"></div><div class=" rich-mpnl-content" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashContentTable" style="width: 1px;height: 1px;"><tr style="height: 1%;"><td class="rich-mpnl-header-cell"><div class="rich-mpnl-text rich-mpnl-header " id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashHeader" style="white-space: nowrap;"><span title="Aguarde">Processando...</span></div></td></tr><tr style="height: 99%"><td class="rich-mpnl-body" valign="top"><table style="text-align:center; width: 100%;">
+<tbody>
+<tr>
+<td><img src="/vda/a4j/g/3_3_3.Finalbr/apc/comp/jsf/ui/waitwindow/images/loading.gif" /></td>
+</tr>
+<tr>
+<td><span title="Aguarde">Aguarde...</span></td>
+</tr>
+</tbody>
+</table>
+</td></tr></table></div></div></div><div class="rich-mpnl-mask-div rich-mpnl-mask-div-transparent" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashCursorDiv" style="z-index: -200;"><button class="rich-mpnl-button" id="consultaNotasAlunoForm:waitConsultaNotas:waitSplashLastHref"></button></div><script type="text/javascript">new ModalPanel('consultaNotasAlunoForm:waitConsultaNotas:waitSplash',
+				{
+					width: -1,
+					height: -1,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: false,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: true,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><span id="waitConsultaNotas_status"><span id="waitConsultaNotas_status.start" style="display: none"></span><script type="text/javascript">
+window.document.getElementById('waitConsultaNotas_status.start').onstart=function(){Richfaces.showModalPanel('waitSplash');;};
+</script><span id="waitConsultaNotas_status.stop"></span><script type="text/javascript">
+window.document.getElementById('waitConsultaNotas_status.stop').onstop=function(){Richfaces.hideModalPanel('waitSplash');;};
+</script></span>
+			<table align="center">
+				<tr>
+					<td align="center" style="padding: 7px"><input id="consultaNotasAlunoForm:inputHiddenMessage" type="hidden" name="consultaNotasAlunoForm:inputHiddenMessage" /><span id="consultaNotasAlunoForm:msgGeral" class="rich-message"><span class="rich-message-label"></span></span></td>
+				</tr>
+			</table><div class="rich-panel " id="consultaNotasAlunoForm:j_id11" style="border:none;"><div class="rich-panel-body " id="consultaNotasAlunoForm:j_id11_body"><div id="consultaNotasAlunoForm:panelBanner" style="display: none;"><input autocomplete="off" id="consultaNotasAlunoForm:panelBannerOpenedState" name="consultaNotasAlunoForm:panelBannerOpenedState" type="hidden" /><div class="rich-modalpanel " id="consultaNotasAlunoForm:panelBannerContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="rich-mpnl-mask-div-opaque rich-mpnl-mask-div" id="consultaNotasAlunoForm:panelBannerDiv" style="z-index: -1;"><button class="rich-mpnl-button" id="consultaNotasAlunoForm:panelBannerFirstHref"></button></div><div class="rich-mpnl-panel"><div class="rich-mp-container" id="consultaNotasAlunoForm:panelBannerCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="rich-mpnl-shadow" id="consultaNotasAlunoForm:panelBannerShadowDiv"></div><div class="rich-mpnl-ovf-hd rich-mpnl-trim rich-mpnl-content" id="consultaNotasAlunoForm:panelBannerContentDiv"><div class="rich-mpnl-text rich-mpnl-controls "><img src="/vda/img/close.gif" onclick="Richfaces.hideModalPanel('panelBanner')" style="cursor:pointer" /></div><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="consultaNotasAlunoForm:panelBannerContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="rich-mpnl-header-cell"><div class="rich-mpnl-text rich-mpnl-header " id="consultaNotasAlunoForm:panelBannerHeader" style="white-space: nowrap;">Informativo</div></td></tr><tr style="height: 99%"><td class="rich-mpnl-body" valign="top"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>GestaoVidaAcademica</title>
+    <link rel="shortcut icon" href="/vda/favicon.ico" />
+</head>
+
+<body>
+
+	<div class="body">
+<style>
+body {
+	background: #F3F2F2;
+}
+</style>
+<form id="consultaNotasAlunoForm:popupCsForm" name="consultaNotasAlunoForm:popupCsForm" method="post" action="/vda/pages/consultanotas/consultanotas.seam" enctype="application/x-www-form-urlencoded" style="margin-top:0px;margin-left:0px;">
+<input type="hidden" name="consultaNotasAlunoForm:popupCsForm" value="consultaNotasAlunoForm:popupCsForm" />
+
+
+		<table align="left" valign="top">
+			<tr>
+				<td>
+					<a href="http://www.pucpr.br/siga/assuntos_financeiros.php" target="_blank">
+						 <img src="../../img/bannerOnline2.png" id="imgBanner" />
+					</a>
+				</td>
+			</tr>
+		</table><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id18" />
+</form>
+	</div>
+
+</body>
+</html></td></tr></table></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerN" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerE" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerS" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerW" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerNWU" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerNEU" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerNEL" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerSEU" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerSEL" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerSWL" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerSWU" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="consultaNotasAlunoForm:panelBannerResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="rich-mpnl-mask-div rich-mpnl-mask-div-transparent" id="consultaNotasAlunoForm:panelBannerCursorDiv" style="z-index: -200;"><button class="rich-mpnl-button" id="consultaNotasAlunoForm:panelBannerLastHref"></button></div><script type="text/javascript">new ModalPanel('consultaNotasAlunoForm:panelBanner',
+				{
+					width: 500,
+					height: 500,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><table>
+<tbody>
+<tr>
+<td><label class="requiredField">
+Aluno: </label></td>
+<td><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:j_id37" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="40" /></td>
+<td><input id="consultaNotasAlunoForm:idTxtCodigoAluno" type="text" name="consultaNotasAlunoForm:idTxtCodigoAluno" value="101893390440" maxlength="12" disabled="disabled" /></td>
+<td><input id="consultaNotasAlunoForm:idTxtNomeAluno" type="text" name="consultaNotasAlunoForm:idTxtNomeAluno" value="Isabelle Sois da Silva" maxlength="255" size="70" disabled="disabled" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:j_id38" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="3px" /></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><label class="requiredField">
+N&iacute;vel de curso :</label></td>
+<td><select id="consultaNotasAlunoForm:cmbNivelCurso" name="consultaNotasAlunoForm:cmbNivelCurso" size="1" onchange="A4J.AJAX.Submit('consultaNotasAlunoForm',event,{'status':'waitConsultaNotas_status','similarityGroupingId':'consultaNotasAlunoForm:j_id42','parameters':{'consultaNotasAlunoForm:j_id42':'consultaNotasAlunoForm:j_id42'} } )" disabled="disabled">	<option value="org.jboss.seam.ui.NoSelectionConverter.noSelectionValue">Selecione...</option>
+	<option value="1" selected="selected">Gradua&ccedil;&atilde;o</option>
+</select></td>
+<td><label class="requiredField">
+Curso:</label><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:j_id45" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="3px" /><select id="consultaNotasAlunoForm:cmbCurso" name="consultaNotasAlunoForm:cmbCurso" size="1" onchange="A4J.AJAX.Submit('consultaNotasAlunoForm',event,{'status':'waitConsultaNotas_status','similarityGroupingId':'consultaNotasAlunoForm:j_id47','parameters':{'consultaNotasAlunoForm:j_id47':'consultaNotasAlunoForm:j_id47'} } )" disabled="disabled">	<option value="org.jboss.seam.ui.NoSelectionConverter.noSelectionValue">Selecione...</option>
+	<option value="1" selected="selected">2243 - Engenharia Civil (Diurno)</option>
+</select></td>
+<td><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:j_id48" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="3px" /></td>
+</tr>
+<tr>
+<td><label class="requiredField">
+Ano/Semestre :</label></td>
+<td><select id="consultaNotasAlunoForm:cmbOferta" name="consultaNotasAlunoForm:cmbOferta" size="1" onchange="A4J.AJAX.Submit('consultaNotasAlunoForm',event,{'status':'waitConsultaNotas_status','similarityGroupingId':'consultaNotasAlunoForm:j_id51','parameters':{'consultaNotasAlunoForm:j_id51':'consultaNotasAlunoForm:j_id51'} } )">	<option value="org.jboss.seam.ui.NoSelectionConverter.noSelectionValue">Selecione...</option>
+	<option value="1" selected="selected">2019 / 2&ordm; semestre</option>
+	<option value="2">2019 / 1&ordm; semestre</option>
+	<option value="3">2018 / 2&ordm; semestre</option>
+	<option value="4">2018 / 1&ordm; semestre</option>
+	<option value="5">2017 / 2&ordm; semestre</option>
+	<option value="6">2017 / 1&ordm; semestre</option>
+	<option value="7">2016 / 2&ordm; semestre</option>
+	<option value="8">2016 / 1&ordm; semestre</option>
+</select></td>
+</tr>
+</tbody>
+</table>
+
+
+		<table>
+			<tr>
+				<td colspan="2"><span id="consultaNotasAlunoForm:painelNotas"><div class="rich-panel " id="consultaNotasAlunoForm:j_id53" style="border:none;"><div class="rich-panel-body " id="consultaNotasAlunoForm:j_id53_body">
+		
+		<table>
+			<tr>
+				<td colspan="2"><table class="rich-table " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno" border="0" cellpadding="0" cellspacing="0"><colgroup span="15"></colgroup><thead class="rich-table-thead"><tr class="rich-table-header  "><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id56" rowspan="2" style="text-align: left;">Disciplina</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id58" rowspan="2">Turma</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id60" colspan="10">Notas / Faltas</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id62" rowspan="2">Faltas/Presen&ccedil;as</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id64" rowspan="2" style="text-align: left;">Resultado</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id66" rowspan="2">Situa&ccedil;&atilde;o acad&ecirc;mica na disciplina</th></tr><tr class="rich-table-header-continue  "><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id68">
+								<table cellpadding="0" cellspacing="0">
+								  <tr>
+								    <td><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id70" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="55px" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <td align="center">Nota 1
+								    </td>
+								  </tr>								  
+								</table></th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id74">
+								<table cellpadding="0" cellspacing="0">
+								  <tr>
+								    <td><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id76" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="55px" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <td align="center">Nota 2
+								    </td>
+								  </tr>								  
+								</table></th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id80">
+								<table cellpadding="0" cellspacing="0">
+								  <tr>
+								    <td><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id82" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="55px" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <td align="center">Nota 3
+								    </td>
+								  </tr>								  
+								</table></th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id86">
+								<table cellpadding="0" cellspacing="0">
+								  <tr>
+								    <td><img alt="" class="rich-spacer " height="1" id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id88" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="55px" />
+								    </td>
+								  </tr>
+								  <tr>
+								    <td align="center">Nota 4
+								    </td>
+								  </tr>								  
+								</table></th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id92">M&eacute;dia</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id94">Av.Final</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id96">M&eacute;dia Final</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id98">Conceito</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id100" width="45px">HA / HR</th><th class="rich-table-headercell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:j_id103">T.Hrs</th></tr></thead><tbody id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:tb"><tr class="rich-table-row rich-table-firstrow " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id105">PL03046-04 -  Obras de Terra e Funda&ccedil;&otilde;es</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id109">A</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id111" style="text-align: right;">7.0/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id114" style="text-align: right;">8.1/4</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id123" style="text-align: right;">7.6</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id127" style="text-align: right;">7.6</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id131" style="text-align: right;">80 / 60</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id133" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id135" style="text-align: right;">4/95%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id137">N&atilde;o processado</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:0:j_id139">Normal</td></tr><tr class="rich-table-row " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id105">AV02026-02A -  Estruturas de Madeira</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id109">A</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id111" style="text-align: right;">6.5/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id114" style="text-align: right;">**/**</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id123" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id127" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id131" style="text-align: right;">40 / 30</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id133" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id135" style="text-align: right;">2/95%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id137">N&atilde;o processado</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:1:j_id139">Normal</td></tr><tr class="rich-table-row " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id105">PUC001-02 -  Projeto Comunit&aacute;rio</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id109">A</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id111" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id114" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id123" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id127" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id131" style="text-align: right;">40 / 30</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id133" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id135" style="text-align: right;">0/100%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id137">N&atilde;o processado</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:2:j_id139">Normal</td></tr><tr class="rich-table-row " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id105">PL03009-00 -  Atividades Complementares</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id109">A</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id111" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id114" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id123" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id127" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id131" style="text-align: right;">18 / 18</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id133" style="text-align: right;">97</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id135" style="text-align: right;">0/100%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id137">N&atilde;o processado</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:3:j_id139">Normal</td></tr><tr class="rich-table-row " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id105">PL03056-04 -  Transportes</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id109">B</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id111" style="text-align: right;">10.0/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id114" style="text-align: right;">10.0/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id123" style="text-align: right;">10.0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id127" style="text-align: right;">10.0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id131" style="text-align: right;">80 / 60</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id133" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id135" style="text-align: right;">2/97%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id137">Aprovado por nota e frequ&ecirc;ncia</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:4:j_id139">Normal</td></tr><tr class="rich-table-row " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id105">PL03028-04 -  Engenharia Sanit&aacute;ria I</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id109">B</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id111" style="text-align: right;">5.9/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id114" style="text-align: right;">8.0/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id123" style="text-align: right;">7.0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id127" style="text-align: right;">7.0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id131" style="text-align: right;">80 / 60</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id133" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id135" style="text-align: right;">10/87%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id137">N&atilde;o processado</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:5:j_id139">Normal</td></tr><tr class="rich-table-row " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id105">PL03047-04 -  Obras Hidr&aacute;ulicas</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id109">B</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id111" style="text-align: right;">6.3/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id114" style="text-align: right;">9.8/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id123" style="text-align: right;">8.1</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id127" style="text-align: right;">8.1</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id131" style="text-align: right;">80 / 60</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id133" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id135" style="text-align: right;">12/85%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id137">N&atilde;o processado</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:6:j_id139">Normal</td></tr><tr class="rich-table-row " onmouseover="this.style.backgroundColor='#F8F8F8'" onmouseout="this.style.backgroundColor='#FFFFFF'"><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id105">PL03059-04 -  Monitoramento de Obras com Uso de Geotecnologias</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id109">A1</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id111" style="text-align: right;">8.5/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id114" style="text-align: right;">8.5/0</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id117" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id120" style="text-align: right;">--/--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id123" style="text-align: right;">8.5</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id125" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id127" style="text-align: right;">8.5</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id129">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id131" style="text-align: right;">80 / 60</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id133" style="text-align: right;">--</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id135" style="text-align: right;">6/92%</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id137">N&atilde;o processado</td><td class="rich-table-cell " id="consultaNotasAlunoForm:idTableProgramasAprendizagemAluno:7:j_id139">Normal</td></tr></tbody></table>
+			</td>
+		</tr>
+		
+	</table></div></div></span>
+				</td>
+			</tr>
+		<tr>
+			<td><table>
+<tbody>
+<tr>
+<td><span class="requiredField">** Nota n&atilde;o lan&ccedil;ada pelo professor</span></td>
+</tr>
+<tr>
+<td><span class="requiredField">-- Nota n&atilde;o prevista pelo professor</span></td>
+</tr>
+<tr>
+<td><span class="requiredField">NC aluno n&atilde;o compareceu na avalia&ccedil;&atilde;o</span></td>
+</tr>
+</tbody>
+</table>
+
+			</td>
+			<td>
+					<table align="right" style="margin-right:3%">
+						<tr valign="bottom">
+							<td style="padding: 0px;">
+							<div class="bg_botaoMenor"><input id="consultaNotasAlunoForm:idBotaoImprimir" type="submit" name="consultaNotasAlunoForm:idBotaoImprimir" value="Imprimir" style="background: url('../../img/imprimir.png') no-repeat left center;" class="btn_default" />
+							</div>
+							</td>
+						</tr>
+					</table>
+			</td>
+		</tr>
+	</table></div></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id18" />
+</form> 
+	
+	<style type="text/css">
+		.tooltip-notice {
+			border: 1px solid #82C2D4;
+			background: #EBF5F8;
+			color: #000;
+			display: inline-block;
+			margin: 0 -0.5em;
+			text-shadow: 1px 1px 1px #CCC;
+		}
+	</style><div id="pesquisaPessoas_"><div id="pesquisaPessoas_:pesquisaPessoas" style="display: none;"><input autocomplete="off" id="pesquisaPessoas_:pesquisaPessoasOpenedState" name="pesquisaPessoas_:pesquisaPessoasOpenedState" type="hidden" /><div class="rich-modalpanel " id="pesquisaPessoas_:pesquisaPessoasContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="rich-mpnl-mask-div-opaque rich-mpnl-mask-div" id="pesquisaPessoas_:pesquisaPessoasDiv" style="z-index: -1;"><button class="rich-mpnl-button" id="pesquisaPessoas_:pesquisaPessoasFirstHref"></button></div><div class="rich-mpnl-panel"><div class="rich-mp-container" id="pesquisaPessoas_:pesquisaPessoasCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="rich-mpnl-shadow" id="pesquisaPessoas_:pesquisaPessoasShadowDiv"></div><div class="rich-mpnl-ovf-hd rich-mpnl-trim rich-mpnl-content" id="pesquisaPessoas_:pesquisaPessoasContentDiv"><div class="rich-mpnl-text rich-mpnl-controls "><img src="/vda/img/close.gif" onclick="Richfaces.hideModalPanel('pesquisaPessoas')" style="cursor:pointer" /></div><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="pesquisaPessoas_:pesquisaPessoasContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="rich-mpnl-header-cell"><div class="rich-mpnl-text rich-mpnl-header " id="pesquisaPessoas_:pesquisaPessoasHeader" style="white-space: nowrap;">Pesquisa de alunos</div></td></tr><tr style="height: 99%"><td class="rich-mpnl-body" valign="top">
+<form id="pesquisaPessoas_:pesquisaPessoas_form" name="pesquisaPessoas_:pesquisaPessoas_form" method="post" action="/vda/pages/consultanotas/consultanotas.seam" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="pesquisaPessoas_:pesquisaPessoas_form" value="pesquisaPessoas_:pesquisaPessoas_form" />
+
+	
+		<fieldset>
+			<legend>Tipo de pesquisa</legend><table>
+	<tr>
+<td>
+<input type="radio" checked="checked" name="pesquisaPessoas_:pesquisaPessoas_form:j_id158" id="pesquisaPessoas_:pesquisaPessoas_form:j_id158:0" value="PREFIX" /><label for="pesquisaPessoas_:pesquisaPessoas_form:j_id158:0"> In&iacute;cio do nome</label></td>
+<td>
+<input type="radio" name="pesquisaPessoas_:pesquisaPessoas_form:j_id158" id="pesquisaPessoas_:pesquisaPessoas_form:j_id158:1" value="SUFFIX" /><label for="pesquisaPessoas_:pesquisaPessoas_form:j_id158:1"> Fim do nome</label></td>
+<td>
+<input type="radio" name="pesquisaPessoas_:pesquisaPessoas_form:j_id158" id="pesquisaPessoas_:pesquisaPessoas_form:j_id158:2" value="PART" /><label for="pesquisaPessoas_:pesquisaPessoas_form:j_id158:2"> Qualquer parte do nome</label></td>
+	</tr>
+</table><input type="checkbox" name="pesquisaPessoas_:pesquisaPessoas_form:j_id160" />Somente registros ativos
+		</fieldset><table width="100%">
+<tbody>
+<tr>
+<td><label class="requiredField">
+Informe o nome a ser pesquisado :</label></td>
+</tr>
+</tbody>
+</table>
+<table style="vertical-align:middle;">
+<tbody>
+<tr>
+<td><input id="pesquisaPessoas_:pesquisaPessoas_form:txtPesquisaModal" type="text" name="pesquisaPessoas_:pesquisaPessoas_form:txtPesquisaModal" maxlength="255" size="70" /></td>
+<td><div id="pesquisaPessoas_:pesquisaPessoas_form:j_id166" class="bg_botaoMenor"><input class="btn_default button_pesquisar" id="pesquisaPessoas_:pesquisaPessoas_form:j_id167" name="pesquisaPessoas_:pesquisaPessoas_form:j_id167" onclick="A4J.AJAX.Submit('pesquisaPessoas_:pesquisaPessoas_form',event,{'status':'waitConsultaNotas_status','similarityGroupingId':'pesquisaPessoas_:pesquisaPessoas_form:j_id167','parameters':{'pesquisaPessoas_:pesquisaPessoas_form:j_id167':'pesquisaPessoas_:pesquisaPessoas_form:j_id167'} } );return false;" value="Buscar" type="button" /></div></td>
+</tr>
+</tbody>
+</table>
+<table class="rich-table " id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas" border="0" cellpadding="0" cellspacing="0" width="100%"><colgroup span="5"></colgroup><thead class="rich-table-thead"><tr class="rich-table-header  "><th class="rich-table-headercell " id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id169"><span class="headerText">Codigo</span></th><th class="rich-table-headercell " id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id171"><span class="headerText">Nome</span></th><th class="rich-table-headercell " id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id173"><span class="headerText">CPF</span></th><th class="rich-table-headercell " id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id175"><span class="headerText">Curso</span></th><th class="rich-table-headercell " id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id177"><span class="headerText">Ativo</span></th></tr><tr class="rich-table-subheader "><th class="rich-table-subheadercell  " scope="col" id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:colCodigoheader"><div id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:colCodigoheader:sortDiv"></div></th><th class="rich-table-subheadercell  " scope="col" id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id181header" onclick="A4J.AJAX.Submit('pesquisaPessoas_:pesquisaPessoas_form',event,{'similarityGroupingId':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas','parameters':{'fsp':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id181','pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas':'fsp'} } )" style="cursor: pointer;"><div id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id181header:sortDiv"><span class="rich-table-sortable-header">ordenar<img src="/vda/a4j/g/3_3_3.Finalorg.richfaces.renderkit.html.iconimages.DataTableIconSortNone/DATB/eAFjYGD4-PEjAAWsAtQ_" alt="" width="15" height="15" class="rich-sort-icon" /></span></div><div><input type="text" name="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id181fsp" value="" class="rich-filter-input" onchange="A4J.AJAX.Submit('pesquisaPessoas_:pesquisaPessoas_form',event,{'similarityGroupingId':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas','parameters':{'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas':'fsp'} } )" onclick="Event.stop(event);" /></div></th><th class="rich-table-subheadercell  " scope="col" id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id184header" onclick="A4J.AJAX.Submit('pesquisaPessoas_:pesquisaPessoas_form',event,{'similarityGroupingId':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas','parameters':{'fsp':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id184','pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas':'fsp'} } )" style="cursor: pointer;"><div id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id184header:sortDiv"><span class="rich-table-sortable-header">ordenar<img src="/vda/a4j/g/3_3_3.Finalorg.richfaces.renderkit.html.iconimages.DataTableIconSortNone/DATB/eAFjYGD4-PEjAAWsAtQ_" alt="" width="15" height="15" class="rich-sort-icon" /></span></div><div><input type="text" name="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id184fsp" value="" class="rich-filter-input" onchange="A4J.AJAX.Submit('pesquisaPessoas_:pesquisaPessoas_form',event,{'similarityGroupingId':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas','parameters':{'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas':'fsp'} } )" onclick="Event.stop(event);" /></div></th><th class="rich-table-subheadercell  " scope="col" id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:columnUnidadeheader" onclick="A4J.AJAX.Submit('pesquisaPessoas_:pesquisaPessoas_form',event,{'similarityGroupingId':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas','parameters':{'fsp':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:columnUnidade','pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas':'fsp'} } )" style="cursor: pointer;"><div id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:columnUnidadeheader:sortDiv"><span class="rich-table-sortable-header">ordenar<img src="/vda/a4j/g/3_3_3.Finalorg.richfaces.renderkit.html.iconimages.DataTableIconSortNone/DATB/eAFjYGD4-PEjAAWsAtQ_" alt="" width="15" height="15" class="rich-sort-icon" /></span></div></th><th class="rich-table-subheadercell  " scope="col" id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id197header"><div id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:j_id197header:sortDiv"></div></th></tr></thead><tfoot><tr class="rich-table-footer  "><td class="rich-table-footercell  " colspan="5" scope="colgroup"><div id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:footerTable"><div class="rich-datascr " id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:ds" style=" ; display: none" align="center"><script type="text/javascript">new Richfaces.Datascroller('pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:ds', function(event){A4J.AJAX.Submit('pesquisaPessoas_:pesquisaPessoas_form',event,{'ignoreDupResponses':true,'implicitEventsQueue':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:ds','status':'waitConsultaNotas_status','similarityGroupingId':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:ds','parameters':{'ajaxSingle':'pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:ds','pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:ds':event.memo.page} } ); return false;});</script></div></div></td></tr></tfoot><tbody id="pesquisaPessoas_:pesquisaPessoas_form:gdrPessoas:tb"></tbody></table><img alt="" class="rich-spacer " height="20px" id="pesquisaPessoas_:pesquisaPessoas_form:j_id205" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="1" /><span id="pesquisaPessoas_:pesquisaPessoas_form:msgPesquisa" class="rich-message"><span class="rich-message-label"></span></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id18" />
+</form></td></tr></table></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerN" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerE" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerS" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerW" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerNWU" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerNEU" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerNEL" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerSEU" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerSEL" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerSWL" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerSWU" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="pesquisaPessoas_:pesquisaPessoasResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="rich-mpnl-mask-div rich-mpnl-mask-div-transparent" id="pesquisaPessoas_:pesquisaPessoasCursorDiv" style="z-index: -200;"><button class="rich-mpnl-button" id="pesquisaPessoas_:pesquisaPessoasLastHref"></button></div><script type="text/javascript">new ModalPanel('pesquisaPessoas_:pesquisaPessoas',
+				{
+					width: 710,
+					height: 500,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div></div><div id="panelNotasParciais" style="display: none;"><input autocomplete="off" id="panelNotasParciaisOpenedState" name="panelNotasParciaisOpenedState" type="hidden" /><div class="rich-modalpanel " id="panelNotasParciaisContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="rich-mpnl-mask-div-opaque rich-mpnl-mask-div" id="panelNotasParciaisDiv" style="z-index: -1;"><button class="rich-mpnl-button" id="panelNotasParciaisFirstHref"></button></div><div class="rich-mpnl-panel"><div class="rich-mp-container" id="panelNotasParciaisCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="rich-mpnl-shadow" id="panelNotasParciaisShadowDiv"></div><div class="rich-mpnl-ovf-hd rich-mpnl-trim rich-mpnl-content" id="panelNotasParciaisContentDiv"><div class="rich-mpnl-text rich-mpnl-controls "><img src="/vda/img/close.gif" onclick="Richfaces.hideModalPanel('panelNotasParciais')" style="cursor:pointer" /></div><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="panelNotasParciaisContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="rich-mpnl-header-cell"><div class="rich-mpnl-text rich-mpnl-header " id="panelNotasParciaisHeader" style="white-space: nowrap;">Notas parciais</div></td></tr><tr style="height: 99%"><td class="rich-mpnl-body" valign="top">
+<script>
+//comeco do script /js/js-event-util.js
+var ApcEventUtil = new Object();
+
+
+/**
+ * Metodo para obter o target de um event
+ */
+ApcEventUtil.getTarget = function( event )
+{		
+	var target = event.target ? event.target : event.srcElement;
+	return target;
+};
+
+/**
+ * Metodo para obter o keyCode de um event
+ */
+ApcEventUtil.getKeyCode = function( event )
+{		
+	if (window.event) // Internet Explorer
+		return event.keyCode;
+	else if(event.which) // Nestcape
+		return event.which;
+	return undefined;	
+};
+
+/**
+ * Dispara um evento em um componente html 
+ * @param controlName
+ * Id do componente onde o evento deve ser disparado
+ * exemplo: (txtName , form:panelGroup1:txtCodigo)
+ * @param eventName
+ * nome do evento a ser disparado 
+ * exemplo: (click,blur,change,...) 
+ */
+ApcEventUtil.fireEvent = function(elementId,eventName) {	
+	var control = document.getElementById(elementId);
+	// On IE
+	if (control.fireEvent) {
+		control.fireEvent('on' + eventName);
+	}	
+	// On Gecko based browsers
+	else if (document.createEvent) 
+	{
+		var evt = document.createEvent('HTMLEvents');
+		if (evt.initEvent) {
+			evt.initEvent(eventName, true, true);
+		}
+		if (control.dispatchEvent) {
+			control.dispatchEvent(evt);
+		}
+	}	
+};
+//termino do script /js/js-event-util.js (hash: cpk8m #36)
+</script>
+
+<script>
+//comeco do script /js/js-input-util.js
+var ApcInputUtil = new Object();
+
+
+/**
+ * Metodo para ser aplicado no onblur e onkeypress<br />
+ * faz com que o campo aceite apenas numeros inteiros<br />
+ * exemplo h:inputText value="#{pessoaBean.inteiro}" onchange="return ApcInputUtil.denyNonDigit(event)" onkeypress="return ApcInputUtil.denyNonDigit(event)" /
+ */
+ApcInputUtil.denyNonDigit = function( event )
+{		
+	var target = event.target ? event.target : event.srcElement;
+	if( event.type == 'blur' || event.type == "change")
+	{		
+		str='';
+		for( i=0;i<target.value.length;i++ )
+		{
+			ch=target.value.charAt(i);
+			if( ch>='0' && ch<='9' )
+				str+=ch;
+		}
+		target.value=str;
+		return true;
+	}
+    var tecla;
+    
+    if (window.event) // Internet Explorer
+            tecla = event.keyCode;
+    else if(event.which) // Nestcape
+            tecla = event.which;
+
+    if ((tecla > 47 && tecla < 58)) // numeros de 0 a 9
+        return true;
+    else {
+        if ( tecla == 8 || !tecla ) // backspace
+            return true;
+        else
+            return false;
+    }
+
+};
+
+/**
+ * Metodo para ser aplicado no onkeypress.<br />
+ * Faz com que o enter gere um evento de perda ou transferecia de foco.<br />
+ * h:inputText value="#{pessoaBean.valor}" onkeypress="return ApcInputUtil.blurOnEnter(event)"<br />
+ * @param event A variavel implicita event<br />
+ * @param dest  (Opcional)  - O elemento html que deve receber o foco 	
+ */
+ApcInputUtil.blurOnEnter = function(event,dest)
+{
+	var keyCode;
+	var input;
+
+	if( dest != undefined )
+		if( dest.focus == undefined )
+			throw 'O elemento de destino nao contem o metodo focus()'; 
+		
+	if(event.keyCode)
+		//IE
+		keyCode = event.keyCode;
+	else
+		//Firefox
+		keyCode = event.which;
+    
+	if(event.srcElement)
+		//IE
+		input = event.srcElement;
+	else
+		//Firefox
+		input = event.target;
+
+	//enter
+	if(keyCode == 13)
+	{
+		input.blur();
+		if( dest != undefined )	
+			dest.focus();
+		return false;
+	}
+    return true;
+};
+
+//termino do script /js/js-input-util.js (hash: sfqsjj #36)
+</script>
+
+<form id="formVisualizarNota" name="formVisualizarNota" method="post" action="/vda/pages/consultanotas/consultanotas.seam" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="formVisualizarNota" value="formVisualizarNota" />
+<table>
+<tbody>
+<tr>
+<td><label class="requiredField">
+Disciplina :</label></td>
+<td><span id="formVisualizarNota:txtPA"></span></td>
+<td><img alt="" class="rich-spacer " height="1" id="formVisualizarNota:j_id211" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="1" style="padding-left:10px; " /></td>
+<td><img alt="" class="rich-spacer " height="1" id="formVisualizarNota:j_id212" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="1" style="padding-left:10px; " /></td>
+</tr>
+<tr>
+<td><label class="requiredField">
+Professor :</label></td>
+<td></td>
+<td><img alt="" class="rich-spacer " height="1" id="formVisualizarNota:j_id217" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="1" style="padding-left:10px; " /></td>
+<td><img alt="" class="rich-spacer " height="1" id="formVisualizarNota:j_id218" src="/vda/a4j/g/3_3_3.Finalimages/spacer.gif" width="1" style="padding-left:10px; " /></td>
+</tr>
+<tr>
+<td><label class="requiredField">
+:</label></td>
+<td><label>
+</label></td>
+<td><label class="requiredField">
+F&oacute;rmula:</label></td>
+<td><label>
+</label></td>
+</tr>
+</tbody>
+</table>
+<table class="rich-table " id="formVisualizarNota:idTableAvaliacoes" border="0" cellpadding="0" cellspacing="0" width="99%"><colgroup span="3"></colgroup><thead class="rich-table-thead"><tr class="rich-table-header  "><th class="rich-table-headercell " id="formVisualizarNota:idTableAvaliacoes:j_id224">Descri&ccedil;&atilde;o</th><th class="rich-table-headercell " id="formVisualizarNota:idTableAvaliacoes:j_id226">Parcial</th><th class="rich-table-headercell " id="formVisualizarNota:idTableAvaliacoes:j_id228">Resultado</th></tr></thead><tfoot><tr class="rich-table-footer  "><td class="rich-table-footercell  " colspan="3" scope="colgroup"><div class="rich-datascr " id="formVisualizarNota:idTableAvaliacoes:pag" style=" ; display: none" align="center"><script type="text/javascript">new Richfaces.Datascroller('formVisualizarNota:idTableAvaliacoes:pag', function(event){A4J.AJAX.Submit('formVisualizarNota',event,{'ignoreDupResponses':true,'implicitEventsQueue':'formVisualizarNota:idTableAvaliacoes:pag','status':'consultaNotasAlunoForm:waitConsultaNotas','similarityGroupingId':'formVisualizarNota:idTableAvaliacoes:pag','parameters':{'formVisualizarNota:idTableAvaliacoes:pag':event.memo.page,'ajaxSingle':'formVisualizarNota:idTableAvaliacoes:pag'} ,'containerId':'visNota'} ); return false;});</script></div></td></tr></tfoot><tbody id="formVisualizarNota:idTableAvaliacoes:tb"></tbody></table><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id18" />
+</form></td></tr></table></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerN" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerE" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerS" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerW" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerNWU" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerNEU" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerNEL" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerSEU" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerSEL" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerSWL" style="height: 40px; width: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerSWU" style="width: 40px; height: 4px;"></div><div class="rich-mpnl-resizer" id="panelNotasParciaisResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="rich-mpnl-mask-div rich-mpnl-mask-div-transparent" id="panelNotasParciaisCursorDiv" style="z-index: -200;"><button class="rich-mpnl-button" id="panelNotasParciaisLastHref"></button></div><script type="text/javascript">new ModalPanel('panelNotasParciais',
+				{
+					width: 650,
+					height: 300,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div>
+	</div>
+
+</body>
+</html>
