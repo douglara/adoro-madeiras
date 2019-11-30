@@ -18,6 +18,7 @@ class CheckPucPrNotesWorker
               # Notifica o user que foi atualizado
               puts('Notas atualizadas')
               UserMailer.notes_updated(user).deliver_now!
+              SmsService.new.send_notification(user.phone, "Oii, suas notas foram atualizadas corre la!") if (user.phone != nil and user.phone != "")
             end
           end
         end
